@@ -1,0 +1,18 @@
+{
+  "name": "webserver1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-mongo": "^1.8.1",
+    "koa-route": "^3.2.0",
+    "koa-session": "^5.12.0",
+    "koa-websocket": "^5.0.1"
+  }
+}

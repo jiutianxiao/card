@@ -1,0 +1,32 @@
+{
+  "ver": "2.3.0",
+  "uuid": "9ad708ba-c970-461d-8162-ae2798f8edfc",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "platformSettings": {},
+  "subMetas": {
+    "按钮-开房间": {
+      "ver": "1.0.3",
+      "uuid": "087a7c0e-7ed8-451f-a413-8e7fa29b042a",
+      "rawTextureUuid": "9ad708ba-c970-461d-8162-ae2798f8edfc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 269,
+      "height": 67,
+      "rawWidth": 269,
+      "rawHeight": 67,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
