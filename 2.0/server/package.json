@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon ./server.js",
+    "start": "nodemon ./server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.8.1",
+    "koa-route": "^3.2.0",
+    "koa-websocket": "^6.0.0",
+    "utility": "^1.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}

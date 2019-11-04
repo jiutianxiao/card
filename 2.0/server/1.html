@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>websocket</title>
+    <style>
+    .n{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+<input type="text" id="pl"/>
+<input type="button" value="发送" id="submit"/>
+<input type="button" value="不出" id="noCard"/>
+<input type="button" value="关闭" id="close"/>
+<div class="n"><div>1</div></div>
+</body>
+<script type="text/javascript">
+
+    // 很重要 必须写，判断浏览器是否支持websocket
+    var CreateWebSocket = (function () {
+        return function (urlValue) {
+            if (window.WebSocket) return new WebSocket(urlValue);
+            if (window.MozWebSocket) return new MozWebSocket(urlValue);
+            return false;
+        }
+    })()
+    var webSocket = CreateWebSocket("ws://127.0.0.1:3000/test/123");
+    webSocket.onopen = function (evt) {
+        // 一旦连接成功，就发送第一条数据
+        webSocket.send(JSON.stringify({state: 1}))
+    };
+    webSocket.onmessage = function (evt) {
+        console.log(evt);
+    };
+    webSocket.onclose = function (evt) {
+        webSocket.send("断开连接");
+        console.log("Connection closed.")
+    };
+</script>
+</html>
